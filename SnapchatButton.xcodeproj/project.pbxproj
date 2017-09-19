@@ -15,6 +15,7 @@
 		7420371E1F71622D002AA5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7420371C1F71622D002AA5A5 /* LaunchScreen.storyboard */; };
 		742037291F71622D002AA5A5 /* SnapchatButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742037281F71622D002AA5A5 /* SnapchatButtonTests.swift */; };
 		742037341F71622D002AA5A5 /* SnapchatButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742037331F71622D002AA5A5 /* SnapchatButtonUITests.swift */; };
+		742037421F717D6C002AA5A5 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742037411F717D6C002AA5A5 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7420372F1F71622D002AA5A5 /* SnapchatButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapchatButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		742037331F71622D002AA5A5 /* SnapchatButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatButtonUITests.swift; sourceTree = "<group>"; };
 		742037351F71622D002AA5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		742037411F717D6C002AA5A5 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7420371C1F71622D002AA5A5 /* LaunchScreen.storyboard */,
 				7420371F1F71622D002AA5A5 /* Info.plist */,
 				742037171F71622D002AA5A5 /* SnapchatButton.xcdatamodeld */,
+				742037411F717D6C002AA5A5 /* CircleView.swift */,
 			);
 			path = SnapchatButton;
 			sourceTree = "<group>";
@@ -196,7 +199,7 @@
 				TargetAttributes = {
 					7420370C1F71622D002AA5A5 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 3S4MHP69HY;
+						DevelopmentTeam = GDP27GN3M4;
 						ProvisioningStyle = Automatic;
 					};
 					742037231F71622D002AA5A5 = {
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742037421F717D6C002AA5A5 /* CircleView.swift in Sources */,
 				742037191F71622D002AA5A5 /* SnapchatButton.xcdatamodeld in Sources */,
 				742037131F71622D002AA5A5 /* ViewController.swift in Sources */,
 				742037111F71622D002AA5A5 /* AppDelegate.swift in Sources */,
@@ -419,7 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3S4MHP69HY;
+				DEVELOPMENT_TEAM = GDP27GN3M4;
 				INFOPLIST_FILE = SnapchatButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stackoo.SnapchatButton;
@@ -432,7 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3S4MHP69HY;
+				DEVELOPMENT_TEAM = GDP27GN3M4;
 				INFOPLIST_FILE = SnapchatButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stackoo.SnapchatButton;

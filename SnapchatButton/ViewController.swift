@@ -10,16 +10,37 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var button: UIView!
+    
+    var circleView: CircleView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let longpressed = UILongPressGestureRecognizer(target: self, action: #selector(longpressedAction))
+        self.button.addGestureRecognizer(longpressed)
+        self.buttonAppearance()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func longpressedAction(sender: UILongPressGestureRecognizer){
+        if sender.state == .began {
+            self.addCircleView()
+        }else if sender.state == .ended{
+            circleView.endCircleAnimation()
+            circleView.removeFromSuperview()
+        }
     }
 
-
+    func buttonAppearance(){
+        self.button.layer.cornerRadius = self.button.frame.size.width / 2
+        self.button.clipsToBounds = true
+    }
+    
+    func addCircleView() {
+        print("Addd")
+        circleView = CircleView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        self.button.addSubview(circleView)
+        // Animate the drawing of the circle over the course of 1 second
+        circleView.animateCircle(duration: 45.0)
+    }
 }
 
