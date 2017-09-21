@@ -13,12 +13,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var button: UIView!
     
     var circleView: CircleView!
+    var circleViewBack: CircleView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let longpressed = UILongPressGestureRecognizer(target: self, action: #selector(longpressedAction))
         self.button.addGestureRecognizer(longpressed)
         self.buttonAppearance()
+        
+        circleViewBack = CircleView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        circleViewBack.circleLayer.strokeColor = UIColor.darkGray.cgColor
+        circleViewBack.circleLayer.strokeEnd = 1.0
+        
+        self.button.addSubview(circleViewBack)
     }
 
     func longpressedAction(sender: UILongPressGestureRecognizer){
